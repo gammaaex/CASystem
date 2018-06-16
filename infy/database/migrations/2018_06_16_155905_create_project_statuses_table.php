@@ -14,8 +14,8 @@ class CreateProjectStatusesTable extends Migration {
 	{
 		Schema::create('project_statuses', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->string('name', 191)->unique('name_UNIQUE');
+			$table->integer('id')->unsigned()->primary();
+			$table->string('name', 191);
 			$table->timestamps();
 			$table->string('created_by', 191);
 			$table->string('updated_by', 191);
