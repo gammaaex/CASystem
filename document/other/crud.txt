@@ -1,0 +1,24 @@
+php artisan infyom:scaffold Authority --fromTable --tableName=authorities --paginate=25
+php artisan infyom:scaffold User --fromTable --tableName=users --paginate=25
+php artisan infyom:scaffold Equipment --fromTable --tableName=equipments --paginate=25
+php artisan infyom:scaffold LendingHistory --fromTable --tableName=lending_histories --paginate=25
+
+php artisan infyom:scaffold ProjectStatus --fromTable --tableName=project_statuses --paginate=25
+php artisan infyom:scaffold Project --fromTable --tableName=projects --paginate=25
+php artisan infyom:scaffold ProjectProgress --fromTable --tableName=project_progresses --paginate=25
+
+php artisan infyom:scaffold Group --fromTable --tableName=groups --paginate=25
+php artisan infyom:scaffold Faculty --fromTable --tableName=faculties --paginate=25
+php artisan infyom:scaffold Role --fromTable --tableName=roles --paginate=25
+php artisan infyom:scaffold Person --fromTable --tableName=people --paginate=25
+
+php artisan infyom:scaffold EventCategory --fromTable --tableName=event_categories --paginate=25
+php artisan infyom:scaffold Event --fromTable --tableName=events --paginate=25
+php artisan infyom:scaffold EventAttendance --fromTable --tableName=event_attendances --paginate=25
+
+php artisan infyom:scaffold Budget --fromTable --tableName=budgets --paginate=25
+
+php artisan infyom:scaffold Questionnaire --fromTable --tableName=questionnaires --paginate=25
+php artisan infyom:scaffold QuestionType --fromTable --tableName=question_types --paginate=25
+php artisan infyom:scaffold QuestionnaireContent --fromTable --tableName=questionnaire_contents --paginate=25
+php artisan infyom:scaffold QuestionnaireAnswer --fromTable --tableName=questionnaire_answers --paginate=25
