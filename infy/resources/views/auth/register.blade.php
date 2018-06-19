@@ -45,7 +45,12 @@
             {!! csrf_field() !!}
 
             <div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
-                <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Full Name">
+                {{
+                    Form::select('authority', $authorities, null, [
+                        'class' => 'form-control',
+                        'value' => old('name')
+                    ])
+                }}
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
 
                 @if ($errors->has('name'))
