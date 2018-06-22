@@ -1,0 +1,1 @@
+<li><a href="{{ url('/register') }}">新規登録</a></li>

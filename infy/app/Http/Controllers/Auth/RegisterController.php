@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/users';
 
     /**
      * Create a new controller instance.
@@ -43,9 +43,7 @@ class RegisterController extends Controller
 
     public function showRegistrationForm()
     {
-        $authorities = Authority::pluck('name', 'id');
-
-        return view('auth.register', compact('authorities'));
+        return view('auth.register');
     }
 
     /**
@@ -71,7 +69,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return \App\Models\User::create([
-            'authority_id' => $data['authority'],
+            'authority_id' => 2, // TODO: 決め打ちを定数に置き換え
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
