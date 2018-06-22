@@ -59,3 +59,7 @@ Laravelが自動的に導入したものも含まれるのでここでは明示�
 - InfyOmLabs/laravel-generator
     - CRUDに関する一切を生成してくれる
     - https://github.com/InfyOmLabs/laravel-generator
+    
+- WildSideUK/Laravel-Userstamps
+    - created_byやupdated_byの値を自動で入力してくれる
+    - https://github.com/WildSideUK/Laravel-Userstamps
