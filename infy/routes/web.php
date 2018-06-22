@@ -23,3 +23,11 @@ Route::get('/home', 'HomeController@index');
 Route::resource('authorities', 'AuthorityController');
 
 Route::resource('users', 'UserController');
+
+Route::resource('groups', 'GroupController');
+
+Route::resource('faculties', 'FacultyController');
+
+Route::resource('roles', 'RoleController');
+
+Route::resource('people', 'PersonController');
