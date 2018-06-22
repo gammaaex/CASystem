@@ -26,7 +26,7 @@ use Eloquent as Model;
  * @property string gender
  * @property integer faculty_id
  * @property date admitted_on
- * @property boolean student_number
+ * @property integer student_number
  * @property string email
  * @property string phone
  * @property integer group_id
@@ -85,7 +85,7 @@ class Person extends Model
         'gender' => 'string',
         'faculty_id' => 'integer',
         'admitted_on' => 'date',
-        'student_number' => 'boolean',
+        'student_number' => 'integer',
         'email' => 'string',
         'phone' => 'string',
         'group_id' => 'integer',
